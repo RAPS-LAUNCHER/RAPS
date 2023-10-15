@@ -13,6 +13,8 @@ echo "[2] PHISHING                "
 echo "[3] WIFI HACKING            "
 echo "[4] TEMPORARY MAIL          "
 echo "[5] SQLMAP                  "
+echo "[i] INFORMATIONS            "
+echo "[r] ALL RAPS TOOLS          "
 echo "                            "
 echo ">>> "
 read r
@@ -56,6 +58,17 @@ elif [ "$r" = "4" ]; then
 elif [ "$r" = "5" ]; then
     cd sqlmap
     python3 sqlmap.py -hh
+elif [ "$r" = "i" ]; then
+    echo "CREATED BY : RAPS"
+    echo "TOOLS USED IN THIS PROJECT  "
+    echo "PyPhisher"
+    echo "Wifite2"
+    echo "Temp-Mail"
+    echo "SQLmap"
+    echo "CREATION :"
+    echo "OCTOBER/15/2023"
+elif [ "$r" = "r" ]; then
+    echo "NOTHING FOR NOW.."
 else
     bash launch.sh
 fi
