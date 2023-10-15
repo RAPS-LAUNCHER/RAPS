@@ -2,6 +2,6 @@
 
 *INSTALLATION*
 
-• git clone ///.git
+• git clone https://github.com/RAPS-LAUNCHER/RAPS/tree/RAPS.git
 
 • bash install.sh
