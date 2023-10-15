@@ -56,5 +56,7 @@ elif [ "$r" = "4" ]; then
 elif [ "$r" = "5" ]; then
     cd sqlmap
     python3 sqlmap.py -hh
+else
+    bash launch.sh
 fi
 
