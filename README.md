@@ -11,7 +11,8 @@ INSTALLATION
 
 • bash install.sh
 
-![image](https://github.com/RAPS-LAUNCHER/RAPS/assets/143559207/f2921c71-10c2-4936-af46-04b456db1904)
+![image](https://github.com/RAPS-LAUNCHER/RAPS/assets/143559207/aa035d1f-db6b-4808-b04e-ac2ba8696c95)
+
 
 ----------------------------------
 
