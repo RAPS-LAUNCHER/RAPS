@@ -1,6 +1,9 @@
 #!/bin/bash
 
+alias raps="cd && cd RAPS && bash launch.sh"
+
 clear
+
 echo "           ____________    "
 echo "          /            \   "
 echo "         / |          | \  "
@@ -16,8 +19,11 @@ echo "          \  /      \  /   "
 echo "           \_        _/    "
 echo "             \______/      "
 echo "               RAPS        "
+
 sleep 2.5
+
 clear
+
 echo "THIS TOOL NEEDS TO BE USED ONLY FOR EDUCATIONAL PURPOSES."
 read -p "Continue (y/n)? " response
 
@@ -51,13 +57,15 @@ while true; do
     echo "[5] SQLMAP                  "
     echo "[i] INFORMATIONS            "
     echo "[r] ALL RAPS TOOLS          "
+    echo "[q] QUIT                    "
     echo "                            "
     echo ">>> "
     read r
     if [ "$r" = "1" ]; then
+        clear
         # Génération de données aléatoires
-        prenoms=("Alice" "Bob" "Charlie" "David" "Eve" "Tylor" "Thomas" "Charle" )
-        noms=("Smith" "Johnson" "Brown" "Wilson" "Taylor" "Wick")
+        prenoms=("Alice" "Bob" "Charlie" "David" "Eve" "Tylor" "Thomas" "Charle" "Emma" "Olivia" "Sophia" "Liam" "Noah" "William")
+        noms=("Smith" "Johnson" "Brown" "Wilson" "Taylor" "Wick" "Jones" "Davis" "Clark" "Harris" "Lewis" "White" "Lee")
         adresses=("123 Rue Fictive" "456 Avenue Imaginaire" "789 Boulevard Inventé")
 
         prenom=${prenoms[$RANDOM % ${#prenoms[@]}]}
@@ -79,13 +87,15 @@ while true; do
         echo "Adresse : $adresse"
         echo "Date de naissance : $date_naissance"
         echo "Téléphone : $telephone"
-        
+
         read -p "Appuyez sur Enter pour revenir au menu principal..."
     elif [ "$r" = "2" ]; then
+        clear
         cd PyPhisher
         python3 pyphisher.py
         read -p "Appuyez sur Enter pour revenir au menu principal..."
     elif [ "$r" = "3" ]; then
+        clear
         cd wifite2
         python3 Wifite.py
         read -p "Appuyez sur Enter pour revenir au menu principal..."
@@ -93,11 +103,15 @@ while true; do
         cd Temp-Mail
         python app.py
         read -p "Appuyez sur Enter pour revenir au menu principal..."
+        cd && cd PROJECTS && cd RAPS
     elif [ "$r" = "5" ]; then
+        clear
         cd sqlmap
         python3 sqlmap.py -hh
         read -p "Appuyez sur Enter pour revenir au menu principal..."
+        cd && cd PROJECTS && cd RAPS
     elif [ "$r" = "i" ]; then
+        clear
         echo "CREATED BY : RAPS"
         echo "TOOLS USED IN THIS PROJECT  "
         echo "PyPhisher"
@@ -108,11 +122,13 @@ while true; do
         echo "OCTOBER/15/2023"
         read -p "Appuyez sur Enter pour revenir au menu principal..."
     elif [ "$r" = "r" ]; then
+        clear
         echo "NOTHING FOR NOW.."
         read -p "Appuyez sur Enter pour revenir au menu principal..."
+    elif [ "$r" = "q" ]; then
+        exit
     else
         clear
         echo "Option invalide. Veuillez réessayer."
         sleep 1
     fi
-done
