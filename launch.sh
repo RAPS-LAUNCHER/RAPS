@@ -1,3 +1,37 @@
+#!/bin/bash
+
+clear
+echo "           ____________    "
+echo "          /            \   "
+echo "         / |          | \  "
+echo "         | /___    ___\ |  "
+echo "         | |   \  /   | |  "
+echo "         / /___/__\___\ \  "
+echo "         |     [/\]     |  "
+echo "         \_,-\      /-,_/  "
+echo "          || |000000| ||   "
+echo "          | \/000000\/ |   "
+echo "          /   |    |   \   "
+echo "          \  /      \  /   "
+echo "           \_        _/    "
+echo "             \______/      "
+echo "               RAPS        "
+sleep 2.5
+clear
+echo "THIS TOOL NEEDS TO BE USED ONLY FOR EDUCATIONAL PURPOSES."
+read -p "Continue (y/n)? " response
+
+if [ "$response" = "n" ]; then
+    echo "Exiting..."
+    exit
+elif [ "$response" = "y" ]; then
+    echo "Proceeding..."
+else
+    echo "Invalid input. Exiting..."
+    exit
+fi
+
+sleep 0.5
 clear
 echo "  _____,  ______  ____    ______      "
 echo " /\  _  \/\  _  \/\  _ \ /\  _  \     "
@@ -6,7 +40,7 @@ echo "  \ \    /\ \  __ \ \ ,__/\/_\__  \   "
 echo "   \ \ \ \ \ \ \/\ \ \ \/   /\ \L\ \  "
 echo "    \ \_\ \_\ \_\ \_\ \_\   \  \____\ "
 echo "     \/_/\/_/\/_/\/_/\/_/    \/_____/ "
-echo "                                      "
+echo "                              TRABBIT "
 echo "                                      "
 echo "[1] FAKE IDENTITY GENERATOR "
 echo "[2] PHISHING                "
@@ -72,4 +106,3 @@ elif [ "$r" = "r" ]; then
 else
     bash launch.sh
 fi
-
