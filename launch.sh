@@ -132,3 +132,4 @@ while true; do
         echo "Option invalide. Veuillez réessayer."
         sleep 1
     fi
+done
