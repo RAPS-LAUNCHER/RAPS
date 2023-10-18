@@ -1,13 +1,9 @@
 #!/bin/bash
-
-alias raps="cd && cd RAPS && bash launch.sh"
-
 clear
-
 echo "           ____________    "
 echo "          /            \   "
 echo "         / |          | \  "
-echo "         | /___    ___\ |  "
+echo "         | /___ )( ___\ |  "
 echo "         | |   \  /   | |  "
 echo "         / /___/__\___\ \  "
 echo "         |     [/\]     |  "
@@ -16,14 +12,11 @@ echo "          || |000000| ||   "
 echo "          | \/000000\/ |   "
 echo "          /   |    |   \   "
 echo "          \  /      \  /   "
-echo "           \_        _/    "
+echo "           \_   ()   _/    "
 echo "             \______/      "
 echo "               RAPS        "
-
 sleep 2.5
-
 clear
-
 echo "THIS TOOL NEEDS TO BE USED ONLY FOR EDUCATIONAL PURPOSES."
 read -p "Continue (y/n)? " response
 
@@ -59,14 +52,15 @@ while true; do
     echo "[r] ALL RAPS TOOLS          "
     echo "[q] QUIT                    "
     echo "                            "
+    sleep 0.5
     echo ">>> "
     read r
     if [ "$r" = "1" ]; then
         clear
         # Génération de données aléatoires
-        prenoms=("Alice" "Bob" "Charlie" "David" "Eve" "Tylor" "Thomas" "Charle" "Emma" "Olivia" "Sophia" "Liam" "Noah" "William")
-        noms=("Smith" "Johnson" "Brown" "Wilson" "Taylor" "Wick" "Jones" "Davis" "Clark" "Harris" "Lewis" "White" "Lee")
-        adresses=("123 Rue Fictive" "456 Avenue Imaginaire" "789 Boulevard Inventé")
+        prenoms=("Alice" "Bob" "Charlie" "David" "Eve" "Tylor" "Thomas" "Charle" "Daniel" "Samuel" "Jeff" "Jeffrey" "Derek" )
+        noms=("Smith" "Johnson" "Brown" "Wilson" "Taylor" "Wick" "Richard" )
+        adresses=("1083 Rue Larivière" "456 Avenue Leblanc" "789 Boulevard Tremblay")
 
         prenom=${prenoms[$RANDOM % ${#prenoms[@]}]}
         nom=${noms[$RANDOM % ${#noms[@]}]}
@@ -103,13 +97,13 @@ while true; do
         cd Temp-Mail
         python app.py
         read -p "Appuyez sur Enter pour revenir au menu principal..."
-        cd && cd PROJECTS && cd RAPS
+cd && cd PROJECTS && cd RAPS
     elif [ "$r" = "5" ]; then
         clear
         cd sqlmap
         python3 sqlmap.py -hh
         read -p "Appuyez sur Enter pour revenir au menu principal..."
-        cd && cd PROJECTS && cd RAPS
+cd && cd PROJECTS && cd RAPS
     elif [ "$r" = "i" ]; then
         clear
         echo "CREATED BY : RAPS"
@@ -124,9 +118,13 @@ while true; do
     elif [ "$r" = "r" ]; then
         clear
         echo "NOTHING FOR NOW.."
+        echo "COMING SOON!"
         read -p "Appuyez sur Enter pour revenir au menu principal..."
     elif [ "$r" = "q" ]; then
-        exit
+         clear
+         sleep 0.5
+         echo "THANKS FOR USING!"
+         exit
     else
         clear
         echo "Option invalide. Veuillez réessayer."
