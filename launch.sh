@@ -1,7 +1,8 @@
 #!/bin/bash
 clear
-echo "           ____________    "
-echo "          /            \   "
+cd && cd RAPS
+echo " RAPS_     ____________    "
+echo " V1.0     /            \   "
 echo "         / |          | \  "
 echo "         | /___ )( ___\ |  "
 echo "         | |   \  /   | |  "
@@ -15,7 +16,41 @@ echo "          \  /      \  /   "
 echo "           \_   ()   _/    "
 echo "             \______/      "
 echo "               RAPS        "
-sleep 2.5
+sleep 0.5
+clear
+echo " RAPS_     ____________    "
+echo " V1.0     /            \   "
+echo "         / |          | \  "
+echo "         | /___ )(    \ |  "
+echo "         | |   \   ____ |  "
+echo "         / /___/__      \  "
+echo "         |     [/\]     |  "
+echo "         \_,-\      /-,_/  "
+echo "          || |000000| ||   "
+echo "          | \/000000\/ |   "
+echo "          /   |    |   \   "
+echo "          \  /      \  /   "
+echo "           \_   ()   _/    "
+echo "             \______/      "
+echo "               RAPS        "
+sleep 0.5
+clear
+echo " RAPS_     ____________    "
+echo " V1.0     /            \   "
+echo "         / |          | \  "
+echo "         | /___ )( ___\ |  "
+echo "         | |   \  /   | |  "
+echo "         / /___/__\___\ \  "
+echo "         |     [/\]     |  "
+echo "         \_,-\      /-,_/  "
+echo "          || |000000| ||   "
+echo "          | \/000000\/ |   "
+echo "          /   |    |   \   "
+echo "          \  /      \  /   "
+echo "           \_   ()   _/    "
+echo "             \______/      "
+echo "               RAPS        "
+sleep 1
 clear
 echo "THIS TOOL NEEDS TO BE USED ONLY FOR EDUCATIONAL PURPOSES."
 read -p "Continue (y/n)? " response
@@ -34,7 +69,7 @@ sleep 0.5
 
 while true; do
     clear
-    echo "  _____,  ______  ____    ______      "
+    echo "  _____   ______  ____    ______      "
     echo " /\  _  \/\  _  \/\  _ \ /\  _  \     "
     echo " \ \ \L\ \ \ \L\ \ \ \L \\ \,\L\/_    "
     echo "  \ \    /\ \  __ \ \ ,__/\/_\__  \   "
@@ -45,21 +80,22 @@ while true; do
     echo "                                      "
     echo "[1] FAKE IDENTITY GENERATOR "
     echo "[2] PHISHING                "
-    echo "[3] WIFI HACKING            "
+    echo "[3] IPTRACE                 "
     echo "[4] TEMPORARY MAIL          "
-    echo "[5] SQLMAP                  "
+    echo "[5] SQLMAP(x)               "
     echo "[i] INFORMATIONS            "
     echo "[r] ALL RAPS TOOLS          "
     echo "[q] QUIT                    "
     echo "                            "
-    sleep 0.5
-    echo ">>> "
-    read r
+    sleep 0.1
+    echo "┌─ENTER YOU CHOICE"
+    read -p "└─》" r
+
     if [ "$r" = "1" ]; then
         clear
         # Génération de données aléatoires
-        prenoms=("Alice" "Bob" "Charlie" "David" "Eve" "Tylor" "Thomas" "Charle" "Daniel" "Samuel" "Jeff" "Jeffrey" "Derek" )
-        noms=("Smith" "Johnson" "Brown" "Wilson" "Taylor" "Wick" "Richard" )
+        prenoms=("Alice" "Bob" "Charlie" "David" "Eve" "Tylor" "Thomas" "Charle" "Daniel" "Samuel" "Jeff" "Jeffrey" "Derek" "Travis" "Danny" "Dave" )
+        noms=("Smith" "Johnson" "Brown" "Wilson" "Taylor" "Wick" "Richard" "Tyler" "Watt" "Watson" )
         adresses=("1083 Rue Larivière" "456 Avenue Leblanc" "789 Boulevard Tremblay")
 
         prenom=${prenoms[$RANDOM % ${#prenoms[@]}]}
@@ -81,44 +117,65 @@ while true; do
         echo "Adresse : $adresse"
         echo "Date de naissance : $date_naissance"
         echo "Téléphone : $telephone"
-
+        echo "                      "
         read -p "Appuyez sur Enter pour revenir au menu principal..."
     elif [ "$r" = "2" ]; then
         clear
         cd PyPhisher
         python3 pyphisher.py
+        echo "                     "
         read -p "Appuyez sur Enter pour revenir au menu principal..."
     elif [ "$r" = "3" ]; then
         clear
-        cd wifite2
-        python3 Wifite.py
+        cd && cd RAPS && cd IPTRACE && chmod +x iptrace
+        echo "[1] TRACE YOURSELF"
+        echo "[2] TRACE SOMEONE IP"
+        read r3
+if [ "$r3" = "1" ]; then
+./iptrace -m
+   elif [ "$r3" = "2" ]; then
+   read -p "ENTER THE VICTIM IP : " ip
+./iptrace -t $ip
+else
+   echo "Invalid option..."
+fi
         read -p "Appuyez sur Enter pour revenir au menu principal..."
+        cd && cd RAPS
     elif [ "$r" = "4" ]; then
         cd Temp-Mail
         python app.py
+        echo "        "
         read -p "Appuyez sur Enter pour revenir au menu principal..."
 cd && cd PROJECTS && cd RAPS
     elif [ "$r" = "5" ]; then
         clear
         cd sqlmap
         python3 sqlmap.py -hh
+        echo "              "
         read -p "Appuyez sur Enter pour revenir au menu principal..."
 cd && cd PROJECTS && cd RAPS
     elif [ "$r" = "i" ]; then
         clear
+        echo "--RAPS--"
+        echo "             "
         echo "CREATED BY : RAPS"
+        echo "DEVELOPED BY : TRABBIT"
+        echo "                     "
         echo "TOOLS USED IN THIS PROJECT  "
-        echo "PyPhisher"
-        echo "Wifite2"
-        echo "Temp-Mail"
-        echo "SQLmap"
+        echo "└─PyPhisher"
+        echo "└─Wifite2"
+        echo "└─Temp-Mail"
+        echo "└─SQLmap"
         echo "CREATION :"
         echo "OCTOBER/15/2023"
+        echo "               "
         read -p "Appuyez sur Enter pour revenir au menu principal..."
     elif [ "$r" = "r" ]; then
         clear
-        echo "NOTHING FOR NOW.."
-        echo "COMING SOON!"
+        echo "•FAKE IDENTITY GENERATOR"
+        echo "•IPTRACE"
+        echo "OTHERS ARE COMING SOON!"
+        echo "             "
         read -p "Appuyez sur Enter pour revenir au menu principal..."
     elif [ "$r" = "q" ]; then
          clear
