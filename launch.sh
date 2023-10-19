@@ -82,7 +82,7 @@ while true; do
     echo "[2] PHISHING                "
     echo "[3] IPTRACE                 "
     echo "[4] TEMPORARY MAIL          "
-    echo "[5] SQLMAP(x)               "
+    echo "[5] UserFinder              "
     echo "[i] INFORMATIONS            "
     echo "[r] ALL RAPS TOOLS          "
     echo "[q] QUIT                    "
@@ -150,11 +150,11 @@ fi
         cd && cd RAPS
     elif [ "$r" = "5" ]; then
         clear
-        cd sqlmap
-        python3 sqlmap.py -hh
-        echo "              "
+        cd UserFinder
+        bash UserFinder.sh
+        echo "               "
         read -p "Appuyez sur Enter pour revenir au menu principal..."
-        cd && cd PROJECTS && cd RAPS
+        cd && cd RAPS
     elif [ "$r" = "i" ]; then
         clear
         echo "--RAPS--"
@@ -164,9 +164,11 @@ fi
         echo "                     "
         echo "TOOLS USED IN THIS PROJECT  "
         echo "└─PyPhisher"
-        echo "└─Wifite2"
+        echo "└─IPTRACE"
         echo "└─Temp-Mail"
-        echo "└─SQLmap"
+        echo "└─UserFinder"
+        echo "└─FAKE IDENTITY GENERATOR"
+        echo "            "
         echo "CREATION :"
         echo "OCTOBER/15/2023"
         echo "               "
