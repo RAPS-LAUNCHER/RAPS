@@ -1,5 +1,5 @@
 clear
-echo "  _____   ______  ____    ______      "
+echo "  _____,  ______  ____    ______      "
 echo " /\  _  \/\  _  \/\  _ \ /\  _  \     "
 echo " \ \ \L\ \ \ \L\ \ \ \L \\ \,\L\/_    "
 echo "  \ \    /\ \  __ \ \ ,__/\/_\__  \   "
@@ -16,7 +16,7 @@ apt install git
 git clone https://github.com/fh-rabbi/Temp-Mail.git
 git clone https://github.com/KasRoudra/PyPhisher
 git clone https://github.com/derv82/wifite2.git
-git clone https://github.com/sqlmapproject/sqlmap.git
+git clone https://github.com/mishakorzik/UserFinder.git
 git clone https://github.com/RAPS-LAUNCHER/IPTRACE.git
 pkg install python
 pkg install python3
