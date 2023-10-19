@@ -121,10 +121,11 @@ while true; do
         read -p "Appuyez sur Enter pour revenir au menu principal..."
     elif [ "$r" = "2" ]; then
         clear
-        cd PyPhisher
+        cd && cd RAPS && cd PyPhisher
         python3 pyphisher.py
         echo "                     "
         read -p "Appuyez sur Enter pour revenir au menu principal..."
+        cd && cd RAPS
     elif [ "$r" = "3" ]; then
         clear
         cd && cd RAPS && cd IPTRACE && chmod +x iptrace
@@ -146,14 +147,14 @@ fi
         python app.py
         echo "        "
         read -p "Appuyez sur Enter pour revenir au menu principal..."
-cd && cd PROJECTS && cd RAPS
+        cd && cd RAPS
     elif [ "$r" = "5" ]; then
         clear
         cd sqlmap
         python3 sqlmap.py -hh
         echo "              "
         read -p "Appuyez sur Enter pour revenir au menu principal..."
-cd && cd PROJECTS && cd RAPS
+        cd && cd PROJECTS && cd RAPS
     elif [ "$r" = "i" ]; then
         clear
         echo "--RAPS--"
