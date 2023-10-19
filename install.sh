@@ -1,5 +1,4 @@
 clear
-mkdir /data/data/com.termux/files/home/RAPS
 echo "  _____,  ______  ____    ______      "
 echo " /\  _  \/\  _  \/\  _ \ /\  _  \     "
 echo " \ \ \L\ \ \ \L\ \ \ \L \\ \,\L\/_    "
