@@ -12,4 +12,5 @@ INSTALLATION
 
 --------------------------
 
-https://i.ibb.co/DWZwy1L/Screenshot-20231021-134614-Termux.jpg
+![image](https://github.com/RAPS-LAUNCHER/RAPS/assets/143559207/450e768a-ac48-4ea0-a5ad-58077a7cb72a)
+
