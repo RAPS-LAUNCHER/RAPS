@@ -1,6 +1,7 @@
 #!/bin/bash
 clear
 cd && cd RAPS
+echo "alias raps='cd && cd RAPS && ./launch.sh'" > ~/.bashrc
 echo " RAPS_     ____________    "
 echo " V1.0     /            \   "
 echo "         / |          | \  "
@@ -78,15 +79,20 @@ while true; do
     echo "     \/_/\/_/\/_/\/_/\/_/    \/_____/ "
     echo "                              TRABBIT "
     echo "                                      "
-    echo "[1] FAKE IDENTITY GENERATOR "
-    echo "[2] PHISHING                "
-    echo "[3] IPTRACE                 "
-    echo "[4] TEMPORARY MAIL          "
-    echo "[5] UserFinder              "
-    echo "[i] INFORMATIONS            "
-    echo "[r] ALL RAPS TOOLS          "
-    echo "[q] QUIT                    "
-    echo "                            "
+    echo " -----------------------------------  "
+    echo " | HACKING TOOLS - TRABBIT - RAPS  |  "
+    echo " -----------------------------------  "
+    echo "  [1] FAKE IDENTITY GENERATOR "
+    echo "  [2] PHISHING                "
+    echo "  [3] IPTRACE                 "
+    echo "  [4] TEMPORARY MAIL          "
+    echo "  [5] UserFinder              "
+    echo "  [6] AdminHack               "
+    echo "  [u] UPDATE                  "
+    echo "  [i] INFORMATIONS            "
+    echo "  [r] ALL RAPS TOOLS          "
+    echo "  [q] QUIT                    "
+    echo "                              "
     sleep 0.1
     echo "┌─ENTER YOU CHOICE"
     read -p "└─》" r
@@ -155,6 +161,16 @@ fi
         echo "               "
         read -p "Appuyez sur Enter pour revenir au menu principal..."
         cd && cd RAPS
+   elif [ "$r" = "6" ]; then
+        cd && cd RAPS && cd AdminHack && bash setup.sh
+        bash AdminHack.sh
+        read -p "Appuyez sur Enter pour revenir au menu principal..."
+        cd && cd RAPS
+    elif [ "$r" = "u" ]; then
+        echo "updating..."
+        sleep 0.5
+        ./update.sh
+        echo "updated."
     elif [ "$r" = "i" ]; then
         clear
         echo "--RAPS--"
