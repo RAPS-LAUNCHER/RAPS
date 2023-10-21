@@ -184,6 +184,7 @@ fi
         echo "└─Temp-Mail"
         echo "└─UserFinder"
         echo "└─FAKE IDENTITY GENERATOR"
+        echo "└─AdminHack"
         echo "            "
         echo "CREATION :"
         echo "OCTOBER/15/2023"
