@@ -16,6 +16,7 @@ chmod +x install.sh
 chmod +x update.sh
 apt update && apt upgrade
 apt install git
+pkg install jq
 git clone https://github.com/fh-rabbi/Temp-Mail.git
 git clone https://github.com/KasRoudra/PyPhisher
 git clone https://github.com/derv82/wifite2.git
