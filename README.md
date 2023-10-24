@@ -4,11 +4,16 @@ INSTALLATION
 
 --------------------------
 
-• git clone https://github.com/RAPS-LAUNCHER/RAPS.git
+```
+git clone https://github.com/RAPS-LAUNCHER/RAPS.git
+```
+```
+cd RAPS
+```
 
-• cd RAPS
-
-• bash install.sh
+```
+bash install.sh
+```
 
 --------------------------
 
